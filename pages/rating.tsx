@@ -1,3 +1,5 @@
+import { Paper, Typography } from '@material-ui/core';
+
 import { Post } from '../components/Post';
 import { MainLayout } from '../layouts/MainLayout';
 

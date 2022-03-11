@@ -20,8 +20,14 @@ a {
   max-width: 640px;
   width: 100%;
   margin: 0 auto;
+
+  &--full {
+    max-width: 1000px;
+  }
 }
 
 .wrapper {
-  padding: 75px 0;
+  display: flex;
+  padding: 0 30px;
+  padding-top: 80px;
 }
