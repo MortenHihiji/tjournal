@@ -23,7 +23,7 @@ export const LeftMenu: React.FC = () => {
       <ul>
         {menu.map((obj) => (
           <li key={obj.path}>
-            <Link href={obj.path}>
+            <Link href={obj.path} passHref>
               <Button>
                 {obj.icon}
                 {obj.text}

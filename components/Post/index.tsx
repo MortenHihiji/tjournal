@@ -1,22 +1,19 @@
 import React from 'react';
-import { Paper, Typography, IconButton } from '@material-ui/core';
+import { Paper, Typography } from '@material-ui/core';
+import Link from 'next/link';
 import Image from 'next/image';
 
-import {
-  ModeCommentOutlined as CommentsIcon,
-  RepeatOutlined as RepostIcon,
-  BookmarkBorderOutlined as FavoriteIcon,
-  ShareOutlined as ShareIcon,
-} from '@material-ui/icons';
-
 import styles from './Post.module.scss';
+import { PostActions } from '../PostActions';
 
 export const Post: React.FC = () => {
   return (
     <Paper elevation={0} className="p-20" classes={{ root: styles.paper }}>
       <Typography variant="h5" className={styles.title}>
-        Кот прилёг отдохнуть в английском парке миниатюр - и стал героем шуток и фотожаб о
-        гиганстком пушистом захватчике
+        <Link href="/news/test-123">
+          Кот прилёг отдохнуть в английском парке миниатюр - и стал героем шуток и фотожаб о
+          гиганстком пушистом захватчике
+        </Link>
       </Typography>
       <Typography className="mt-10 mb-15">
         Пока одни не могли соотнести размеры животного окружения, другие начали создавать
@@ -28,29 +25,7 @@ export const Post: React.FC = () => {
         height={500}
         width={600}
       />
-
-      <ul className={styles.actions}>
-        <li>
-          <IconButton>
-            <CommentsIcon />
-          </IconButton>
-        </li>
-        <li>
-          <IconButton>
-            <RepostIcon />
-          </IconButton>
-        </li>
-        <li>
-          <IconButton>
-            <FavoriteIcon />
-          </IconButton>
-        </li>
-        <li>
-          <IconButton>
-            <ShareIcon />
-          </IconButton>
-        </li>
-      </ul>
+      <PostActions />
     </Paper>
   );
 };

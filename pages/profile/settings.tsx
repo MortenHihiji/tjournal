@@ -10,7 +10,8 @@ export default function Settings() {
         <Divider className="mt-20 mb-30" />
         <form>
           <TextField className="mb-20" label="Никнейм" variant="outlined" fullWidth required />
-          <TextField className="mb-10" label="Эл. почта" variant="outlined" fullWidth required />
+          <TextField className="mb-20" label="Эл. почта" variant="outlined" fullWidth required />
+          <TextField className="mb-10" label="Пароль" variant="outlined" fullWidth required />
 
           <Divider className="mt-30 mb-20" />
           <Button color="primary" variant="contained">
