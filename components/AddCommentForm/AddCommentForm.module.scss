@@ -1,0 +1,24 @@
+.form {
+  position: relative;
+}
+
+.fieldRoot {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  padding: 5px 17px 5px 15px !important;
+  background-color: #f7f7f7;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  border-radius: 10px;
+  cursor: pointer !important;
+
+  &:after,
+  &:before {
+    display: none;
+  }
+}
+
+.addButton {
+  position: absolute !important;
+  right: 20px;
+  bottom: 40px;
+}

@@ -36,7 +36,21 @@ a {
   box-shadow: none;
 }
 
+.container {
+  margin: 0 auto;
+  width: 680px;
+}
+
 // .MuiButton-root:active {
 //   translate: translateY(0px) !important;
 //   box-shadow: none !important;
 // }
+
+// Write Post Styles
+.ce-toolbar__content {
+  max-width: unset !important;
+}
+
+.ce-block__content {
+  max-width: unset !important;
+}

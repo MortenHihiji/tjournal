@@ -4,7 +4,17 @@ import MoreIcon from '@material-ui/icons/MoreHorizOutlined';
 
 import styles from './Comment.module.scss';
 
-export const Comment: React.FC = () => {
+interface CommentPostProps {
+  key: number;
+  user: {
+    fullname: string;
+    avatarUrl: string;
+  };
+  text: string;
+  createdAt: string;
+}
+
+export const Comment: React.FC<CommentPostProps> = ({ key, user, text, createdAt }) => {
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   const handleClick = (e) => {
@@ -16,19 +26,13 @@ export const Comment: React.FC = () => {
   };
 
   return (
-    <div className={styles.comment}>
+    <div key={key} className={styles.comment}>
       <div className={styles.userInfo}>
-        <img
-          src="https://leonardo.osnova.io/2d20257c-fec5-4b3e-7f60-055c86f24a4d/-/scale_crop/108x108/-/format/webp/"
-          alt="avatar"
-        />
-        <b>Master Oogway</b>
-        <span>5 часов</span>
+        <img src={user.avatarUrl} alt="avatar" />
+        <b>{user.fullname}</b>
+        <span>{createdAt}</span>
       </div>
-      <Typography className={styles.text}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quis fuga tempore atque quae
-        laboriosam, at quo ducimus reprehenderit ipsam rem sint nihil facilis.
-      </Typography>
+      <Typography className={styles.text}>{text}</Typography>
       <span className={styles.replyBtn}>Ответить</span>
       <IconButton onClick={handleClick}>
         <MoreIcon />
