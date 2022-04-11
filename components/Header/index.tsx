@@ -10,14 +10,26 @@ import {
   NotificationsNoneOutlined as NotificationIcon,
   ExpandMoreOutlined as ArrowBottom,
   Menu as MenuIcon,
+  AccountCircleOutlined as UserIcon,
 } from '@material-ui/icons';
 
 import styles from './Header.module.scss';
+import { AuthDialog } from '../AuthDialog';
 
 // import Image from 'next/image';
 // import Logo from '../../public/static/logo.svg';
 
 export const Header: React.FC = () => {
+  const [authVisible, setAuthVisible] = React.useState(false);
+
+  const openAuthDialog = () => {
+    setAuthVisible(true);
+  };
+
+  const closeAuthDialog = () => {
+    setAuthVisible(false);
+  };
+
   return (
     <Paper classes={{ root: styles.root }} elevation={0}>
       <div className="d-flex align-center">
@@ -83,13 +95,18 @@ export const Header: React.FC = () => {
         <IconButton>
           <NotificationIcon />
         </IconButton>
-        <Link href="/profile/1">
+        {/* <Link href="/profile/1">
           <a className="d-flex align-center">
             <Avatar className={styles.avatar} alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
             <ArrowBottom />
           </a>
-        </Link>
+        </Link> */}
+        <div className={styles.loginButton} onClick={openAuthDialog}>
+          <UserIcon />
+          Ввойти
+        </div>
       </div>
+      <AuthDialog handleClose={closeAuthDialog} visible={authVisible} />
     </Paper>
   );
 };

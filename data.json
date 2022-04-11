@@ -4,11 +4,13 @@
       {
         "id": 1,
         "user": {
+          "id": 1,
           "fullname": "Вася Пупкин",
           "avatarUrl": "https://leonardo.osnova.io/2d20257c-fec5-4b3e-7f60-055c86f24a4d/-/scale_crop/108x108/-/format/webp/"
         },
         "text": "Теперь, каждое рабочее утро, после кровати, я перекладываюсь туда спать ещё на часок. Ну и...",
         "post": {
+          "id": 1,
           "title": "Какая у вас дома ванна?"
         },
         "createdAt": "Sat Apr 09 2022 18:46:28 GMT+0300 (Eastern European Summer Time)"
@@ -16,11 +18,13 @@
       {
         "id": 2,
         "user": {
+          "id": 1,
           "fullname": "Вася Пупкин",
           "avatarUrl": "https://leonardo.osnova.io/2d20257c-fec5-4b3e-7f60-055c86f24a4d/-/scale_crop/108x108/-/format/webp/"
         },
         "text": "Теперь, каждое рабочее утро, после кровати, я перекладываюсь туда спать ещё на часок. Ну и...",
         "post": {
+          "id": 1,
           "title": "Какая у вас дома ванна?"
         },
         "createdAt": "Sat Apr 09 2022 18:46:28 GMT+0300 (Eastern European Summer Time)"
@@ -28,11 +32,13 @@
       {
         "id": 3,
         "user": {
+          "id": 1,
           "fullname": "Вася Пупкин",
           "avatarUrl": "https://leonardo.osnova.io/2d20257c-fec5-4b3e-7f60-055c86f24a4d/-/scale_crop/108x108/-/format/webp/"
         },
         "text": "Теперь, каждое рабочее утро, после кровати, я перекладываюсь туда спать ещё на часок. Ну и...",
         "post": {
+          "id": 1,
           "title": "Какая у вас дома ванна?"
         },
         "createdAt": "Sat Apr 09 2022 18:46:28 GMT+0300 (Eastern European Summer Time)"
@@ -42,11 +48,13 @@
       {
         "id": 1,
         "user": {
+          "id": 1,
           "fullname": "Вася Пупкин",
           "avatarUrl": "https://leonardo.osnova.io/2d20257c-fec5-4b3e-7f60-055c86f24a4d/-/scale_crop/108x108/-/format/webp/"
         },
         "text": "Теперь, каждое рабочее утро, после кровати, я перекладываюсь туда спать ещё на часок. Ну и...",
         "post": {
+          "id": 1,
           "title": "Какая у вас дома ванна?"
         },
         "createdAt": "Sat Apr 09 2022 18:46:28 GMT+0300 (Eastern European Summer Time)"
@@ -54,11 +62,13 @@
       {
         "id": 2,
         "user": {
+          "id": 1,
           "fullname": "Вася Пупкин",
           "avatarUrl": "https://leonardo.osnova.io/2d20257c-fec5-4b3e-7f60-055c86f24a4d/-/scale_crop/108x108/-/format/webp/"
         },
         "text": "Теперь, каждое рабочее утро, после кровати, я перекладываюсь туда спать ещё на часок. Ну и...",
         "post": {
+          "id": 1,
           "title": "Какая у вас дома ванна?"
         },
         "createdAt": "Sat Apr 09 2022 18:46:28 GMT+0300 (Eastern European Summer Time)"
